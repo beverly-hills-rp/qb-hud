@@ -1,0 +1,51 @@
+.beverly-bar-container {
+    position: relative;
+
+    display: flex;
+
+    padding: 0.625rem 0 0 0.625rem;
+}
+
+.beverly-bar-container .status-bar {
+    margin-top: 0.5rem;
+}
+
+.beverly-bar-container .game-info {
+    position: absolute;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    width: 20.25rem;
+
+    margin-left: 5.25rem;
+}
+
+.beverly-bar-container .game-info .hour,
+.beverly-bar-container .game-info .radio {
+    display: flex;
+
+    align-items: center;
+}
+
+.beverly-bar-container .game-info .hour {
+    justify-content: center;
+}
+
+.beverly-bar-container .game-info .radio {
+    justify-content: end;
+}
+
+.beverly-bar-container .game-info .hour span,
+.beverly-bar-container .game-info .radio span {
+    margin-left: 0.25rem;
+
+    font-family: 'Jura';
+    color: #D9D9D9;
+
+    vertical-align: center;
+}
+

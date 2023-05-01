@@ -1,0 +1,111 @@
+.speedometer-container {
+    position: absolute;
+
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+
+    bottom: 3.25rem;
+    right: 2.5rem;
+}
+
+#speedometer #analog-tachometer line {
+    stroke: rgba(255, 255, 255, 0.7);
+    stroke-width: 2;
+}
+
+#speedometer #analog-tachometer line.main {
+    stroke-width: 3;
+}
+
+#speedometer #analog-tachometer text {
+    font-weight: 500;
+    fill: #fff;
+
+    font-family: 'Jura';
+}
+
+#speedometer #analog-tachometer text.rpm-summary {
+    font-weight: 800;
+    fill: rgba(255, 255, 255, 0.7);
+
+    font-family: 'Montserrat';
+}
+
+#speedometer #analog-tachometer text.rpm-summary-value {
+    font-weight: 800;
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+#speedometer #analog-tachometer text.kmh-value {
+    font-weight: 800;
+    fill: rgba(255, 255, 255, 1);
+}
+
+#speedometer #analog-tachometer text.kmh-summary {
+    font-weight: 800;
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+#speedometer #analog-tachometer #pointer {
+    transform-origin: 55.2% 50.6% 0;
+    transition: transform 135ms ease;
+}
+
+#speedometer #nitrous-bar path {
+    fill: rgba(243, 243, 243, 0.75);
+    fill-opacity: 0.5;
+}
+
+#speedometer path#nitrous-level {
+    transition: d 135ms ease;
+}
+
+#speedometer #fuel-bar path {
+    fill: rgba(243, 243, 243, 0.75);
+    fill-opacity: 0.5;
+}
+
+#speedometer #panel-icons path {
+    fill: rgba(243, 243, 243, 0.75);
+    fill-opacity: 0.8;
+}
+
+#speedometer #panel-icons .active path {
+    fill: #81c68f;
+    fill-opacity: 0.9;
+}
+
+#speedometer #panel-icons .blink {
+    animation: blink 1.5s infinite;
+}
+
+#speedometer #panel-icons #engine-icon.healthy path {
+    fill: #81c68f;
+    fill-opacity: 0.8;
+}
+
+#speedometer #panel-icons #engine-icon.caution path {
+    fill: #f7c56c;
+    fill-opacity: 0.8;
+}
+
+#speedometer #panel-icons #engine-icon.warning path {
+    fill: #f28d45;
+    fill-opacity: 0.8;
+
+    animation: blink 1s infinite;
+}
+
+#speedometer #panel-icons #engine-icon.danger path {
+    fill: #ff0000;
+    fill-opacity: 0.8;
+
+    animation: blink 1s infinite;
+}
+
+#speedometer #analog-tachometer #danger-zone {
+    fill: #fe0303;
+    fill-opacity: 0.8;
+}

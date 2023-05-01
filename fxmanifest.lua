@@ -1,27 +1,30 @@
-fx_version 'cerulean'
-game 'gta5'
+fx_version "cerulean"
+use_fxv2_oal "yes"
+lua54 "yes"
+games { "gta5" }
 
-description 'qb-hud'
-version '2.2.0'
+name "hud"
+version "0.1.0"
+description "GTA V Roleplay Hud"
+author "Muloo"
 
 shared_scripts {
-    '@qb-core/shared/locale.lua',
-    'locales/en.lua',
-    'locales/*.lua',
-    'config.lua'
+    "src/shared/config.lua"
 }
 
-client_script 'client.lua'
-server_script 'server.lua'
+client_scripts {
+    "src/client/main.lua"
+}
 
-ui_page 'html/index.html'
+server_scripts {
+    "src/server/main.lua"
+}
+
+ui_page "nui/dist/index.html"
 
 files {
-    'html/*',
-    'html/index.html',
-    'html/styles.css',
-    'html/responsive.css',
-    'html/app.js',
+    "nui/dist/index.html",
+    "nui/dist/assets/*.js",
+    "nui/dist/assets/*.png",
+    "nui/dist/assets/*.css"
 }
-
-lua54 'yes'

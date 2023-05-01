@@ -1,0 +1,21 @@
+.compass-container {
+    position: absolute;
+
+    bottom: 0.75rem;
+    left: 2.25rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#compass-svg {
+    transition: transform 50ms ease;
+}
+
+.compass-address {
+    font-family: 'Jura';
+
+    text-align: center;
+
+    margin: auto;
+}
